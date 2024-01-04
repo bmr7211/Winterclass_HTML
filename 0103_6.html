@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>0103_6</title>
+</head>
+
+<body>
+    <form name="input" action="test.jsp" method="get">
+        아이디: <input type="text" name="name"><br>
+        <br>
+        <input type="image" src="image/button.png" alt="그림없음">
+        <p>URL: <input type="url" name="url" required></p>
+        <p>신발 사이즈:
+            <input type="number" value="240" min="210" max="300" step="5" name="shoes">
+        </p>
+        <p>테니스 실력: <input type="range" min="1" max="10" value="1"></p>
+        <p>생일: <input type="date"></p>
+        <p>좋아하는 색: <input type="color"></p>
+        <p>의견<br><textarea cols="100" rows="10"></textarea></p>
+        <p>듣고싶은 강좌:
+            <select name="course">
+                <option value="html_course">HTML</option>
+                <option value="python_course">Python</option>
+                <option value="java_course">JAVA</option>
+                <option value="orange_course">Orange</option>
+            </select>
+        </p>
+        <fieldset>
+            <legend>개인정보</legend>
+            <p>이름: <input type="text"></p>
+            <p>전화번호: <input type="text"></p>
+            <p>주소: <input type="text"></p>
+        </fieldset>
+        <p>성별
+            <br>
+            <label for="male">남성
+                <input type="radio" name="gender" value="male" id="male">
+            </label>
+            <br>
+            <label for="female">여성
+                <input type="radio" name="gender" value="female" id="female">
+            </label>
+        </p>
+        <p><input type="submit" value="제출" name="submit"></p>
+    </form>
+</body>
+
+</html>

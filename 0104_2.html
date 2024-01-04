@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>0104_2</title>
+</head>
+
+<body>
+    <form name="input" action="test.jsp" method="get">
+        <fieldset>
+            <legend><h3>개인 정보 입력</h3></legend>
+
+            <p>아이디: <input type="text" name="name" required>
+                <input type="submit" value="ID중복검사" name="idcheck">
+            </p>
+            <p>생년월일: <input type="date" required></p>
+            <p>성별:
+                <label for="male">남성
+                    <input type="radio" name="gender" value="male" id="male">
+                </label>
+                <label for="female">여성
+                    <input type="radio" name="gender" value="female" id="female">
+                </label>
+            </p>
+            <p>E-mail : <input type="email" placeholder="id@naver.com" required></p>
+            <p>메일 수신:
+                <input type="radio" name="agree" value="yes">수신동의
+                <input type="radio" name="agree" value="no">수신거부
+            </p>
+            <p>핸드폰:
+                <select name="phone1">
+                    <option value="010">010</option>
+                    <option value="02">02</option>
+                    <option value="070">070</option>
+                </select> -
+                <input type="text" name="phone2"> -
+                <input type="text" name="phone3">
+            </p>
+            <p>직업:
+                <select name="work">
+                    <option value="student">학생</option>
+                    <option value="salary">회사원</option>
+                    <option value="society">공무원</option>
+                    <option value="market">자영업</option>
+                </select>
+            </p>
+            <p>취미:
+                <input type="checkbox" name="habit" value="shopping">쇼핑
+                <input type="checkbox" name="habit" value="internet">인터넷
+                <input type="checkbox" name="habit" value="music">음악감상
+                <input type="checkbox" name="habit" value="book">독서
+                <input type="checkbox" name="habit" value="sports">스포츠
+            </p>
+            <p>자기소개<textarea cols="30" rows="5"></textarea></p>
+        </fieldset>
+        <p>
+            <input type="submit" value="등록" name="submit">
+            <input type="reset" value="초기화" name="submit">
+        </p>
+    </form>
+</body>
+
+</html>
